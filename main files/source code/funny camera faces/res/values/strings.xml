@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">FunnyFace Cams</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_select_frame">SelectFrameActivity</string>
+    <string name="title_activity_selected_image">SelectedImageActivity</string>
+ <string name="admob_banner">ca-app-pub-2691806550199991/2624741463</string>
+     <string name="admob_intersitials">ca-app-pub-2691806550199991/4101474668</string>
+</resources>

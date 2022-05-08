@@ -1,0 +1,82 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    android:layout_gravity="center"
+    android:gravity="left"
+    tools:context="com.karma.animal_photo_frames.MainActivity" >
+
+     <LinearLayout
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:layout_marginBottom="20dp"
+         android:gravity="center"
+         android:orientation="horizontal" >
+
+        <ImageButton
+            android:id="@+id/camera_ibtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
+            android:layout_margin="2dp"
+            android:background="@drawable/camera" />
+
+        <ImageButton
+            android:id="@+id/editor_ibtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/gallery" />
+
+        <ImageButton
+            android:id="@+id/gallery_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            
+            android:visibility="gone"
+            android:background="@drawable/gallery" />
+
+        <ImageButton
+            android:id="@+id/share_ibtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/share" />
+
+        <ImageButton
+            android:id="@+id/rate_it_ibtn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_margin="2dp"
+            android:background="@drawable/rate" />
+
+    </LinearLayout> 
+
+   <!--  <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="150dp" >
+        
+         <ImageButton
+            android:id="@+id/camera_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/camera_selector" />
+
+        <ImageButton
+            android:id="@+id/editor_ibtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:background="@layout/editor_selector" />
+        
+    </LinearLayout> -->
+
+</RelativeLayout>

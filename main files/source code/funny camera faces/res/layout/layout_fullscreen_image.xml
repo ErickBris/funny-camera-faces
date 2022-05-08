@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:background="@drawable/background2"
+    android:layout_height="match_parent" >
+
+  <!--   <com.example.meninsuit.TouchImageView
+        android:id="@+id/imgDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scaleType="fitCenter" />
+ -->
+ 
+ 
+ <ImageView 
+      android:id="@+id/imgDisplay"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_margin="10dp"
+        android:scaleType="fitCenter"/>
+ 
+ <com.google.android.gms.ads.AdView
+			    xmlns:ads="http://schemas.android.com/apk/res-auto"
+			    android:id="@+id/adView"
+			    android:layout_alignParentTop="true"
+			    android:layout_width="match_parent"
+			    android:layout_height="wrap_content"
+			    ads:adUnitId="@string/admob_banner"
+			    ads:adSize="BANNER"/>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal" >
+        
+        <Button
+            android:id="@+id/btnwall"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/wall_selector"
+           />
+
+        <Button
+            android:id="@+id/btnShare"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="10dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:background="@drawable/share_"
+            android:textColor="#ffffff" />
+
+        <Button
+            android:id="@+id/btnClose"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+             android:layout_gravity="center"
+             android:gravity="center"
+            android:background="@drawable/close_b" />
+
+    </LinearLayout>
+
+</RelativeLayout>

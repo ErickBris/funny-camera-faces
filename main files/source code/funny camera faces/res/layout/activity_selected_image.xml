@@ -1,0 +1,121 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background2"
+    android:layout_gravity="center"
+    android:gravity="center"
+    tools:context="com.example.photocollage.SelectedImageActivity" >
+
+    <RelativeLayout
+        android:id="@+id/ll1"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/white"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/main_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/rr_1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5" >
+
+                <ImageView
+                    android:id="@+id/iv_1"
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:background="@android:color/black"
+                    android:scaleType="matrix" >
+                </ImageView>
+            </FrameLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/main_img"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+ 			android:scaleType="fitXY"
+            />
+        
+       
+    </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/ll2"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:gravity="center"
+            android:orientation="horizontal"
+        >
+        
+            <ImageButton
+                android:id="@+id/home"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                
+                android:background="@drawable/home" />
+
+            <ImageButton
+                android:id="@+id/selectframe_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="4dp"
+              
+                android:background="@drawable/frames" />
+
+        <!--     <ImageButton
+                android:id="@+id/leftRotation_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+             
+                android:background="@drawable/leftrotation_selector" />
+
+            <ImageButton
+                android:id="@+id/rightRotation_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_margin="5dp"
+                 
+                android:background="@drawable/rightselector" /> -->
+
+            <ImageButton
+                android:id="@+id/effect_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                
+                android:background="@drawable/effects" />
+
+            <ImageButton
+                android:id="@+id/ok_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+                
+                android:background="@drawable/done" />
+
+            <ImageButton
+                android:id="@+id/share_ibtn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_margin="5dp"
+           
+                android:background="@drawable/share_selector"
+                android:visibility="gone" />
+        </LinearLayout>
+
+</RelativeLayout>
